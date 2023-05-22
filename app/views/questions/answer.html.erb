@@ -1,7 +1,17 @@
 
-<p>Question: <%=params[:ask]%> </p>
 
 
-<p>Answer: <%=@answer %></p>
+<div id="question" class="blockquote">
+  <p><%=params[:ask]%></p>
+  <p class="blockquote-footer"><em>You</em></p>
+</div>
 
-<%= link_to "ask another question", ask_path %>
+
+<div id="answer" class="blockquote">
+  <p><%=@answer %></p>
+  <p class="blockquote-footer"><em>Your Coach</em></p>
+</div>
+
+<div class="link">
+<%= link_to "Ask another question", ask_path %>
+</div>
